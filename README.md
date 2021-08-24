@@ -1,4 +1,6 @@
-# leitor-distancia-esp32
+<h1 align="center">Leitor de Distância com ESP32 e HC-SR04</h1>
+
+<hr>
 
 ## Project setup
 ```
