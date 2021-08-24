@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <leitura/>
   </div>
 </template>
 
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Leitura from "@/components/leitura";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { Leitura },
+
+  mounted() {
+    this.$mqtt.subscribe('laura/#')
   }
 }
 </script>
+
+
 
 <style>
 #app {
